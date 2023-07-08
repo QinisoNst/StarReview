@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.starreview">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logoz"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".movies"></activity>
+        <activity android:name=".sifis" />
+        <activity android:name=".animes" />
+        <activity android:name=".actions" />
+        <activity android:name=".actiont" />
+        <activity android:name=".neww" />
+        <activity android:name=".coomingsoon" />
+        <activity android:name=".login" />
+        <activity android:name=".nana" />
+        <activity android:name=".movie" />
+        <activity android:name=".sifi" />
+        <activity android:name=".anime" />
+        <activity android:name=".search" />
+        <activity android:name=".action" />
+        <activity
+            android:name=".SettingsActivity"
+            android:label="@string/title_activity_settings" />
+        <activity android:name=".movielist" />
+        <activity android:name=".home" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

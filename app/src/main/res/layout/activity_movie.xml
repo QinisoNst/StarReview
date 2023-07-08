@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".movie"
+    android:background="@drawable/homea">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#4d5dfb"
+            android:textAlignment="center"
+            app:navigationIcon="@drawable/logoz"
+            app:title="Movie"
+            app:titleMarginStart="40dp"
+            app:titleTextColor="@android:color/white"
+            tools:ignore="MissingConstraints" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="31dp"></LinearLayout>
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="358dp"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="58dp">
+
+
+            <Button
+                android:id="@+id/bt_submit"
+                android:layout_width="85dp"
+                android:layout_height="42dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginTop="9dp"
+                android:layout_marginBottom="7dp"
+                android:background="@drawable/but"
+                android:text="@string/Rent"
+                android:textColor="@android:color/white" />
+
+            <TextView
+                android:id="@+id/countryName"
+                android:layout_width="221dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="93dp"
+                android:layout_marginEnd="97dp"
+                android:background="#4d5dfb"
+                android:text="me"
+                android:textColor="@android:color/white"
+                android:textSize="30sp" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <VideoView
+                android:id="@+id/Videoview"
+                android:layout_width="match_parent"
+                android:layout_height="255dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintVertical_bias="0.258" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="47dp">
+
+            <RatingBar
+                android:id="@+id/ratingBar"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="#4d5dfb"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.567"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.513" />
+
+
+            <Button
+                android:id="@+id/bt_submit1"
+                android:layout_width="85dp"
+                android:layout_height="42dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="260dp"
+                android:layout_marginTop="7dp"
+                android:layout_marginEnd="66dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/but"
+                android:text="@string/Exit"
+                android:textColor="@android:color/white" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="194dp"
+        android:background="@drawable/aaaa"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="165dp"
+            android:layout_height="40dp"
+            android:text="Description"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="match_parent"
+            android:layout_height="154dp"
+            android:text="TextView"
+            android:textSize="15sp"
+            android:textColor="@android:color/white"
+            />
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottom_navigtion"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:background="#4d5dfb"
+            app:itemIconTint="@drawable/selector"
+            app:itemTextColor="@drawable/selector"
+            app:menu="@menu/home" />
+    </RelativeLayout>
+</LinearLayout>
